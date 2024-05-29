@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid-boka.css">
+    <title>TestWebplatsen</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="img_hotell/logo.webp" alt="paragraph hotell">
+        <img id="pool" src="img_hotell/Hotell_pool.webp" alt="hotell pool picture">
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="index1.html">Start</a>
+        <a href="boka.html" class="active">Boka</a>
+        <a href="hitta.html">Hitta</a>
+        <a href="kontakta.html">Kontakta</a>
+        <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <div>
+        <div class="container">
+            <form action="action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Ditt namn">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Telefonnummer">Telefonnummer</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="Telefonnummer" name="Telefonnummer" placeholder="Ditt telefonnummer">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">E-postadress</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Din e-postadress">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Rumtyp">Rumtyp</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="Rumtyp" name="Rumtyp">
+                            <option value="Enkelrum">Enkelrum</option>
+                            <option value="Dubbelrum">Dubbelrum</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="övrigt">Övrigt</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="övrigt" name="övrigt" placeholder="Write something"
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <aside>
+        <img id="room" src="img_hotell/room.webp" alt="A image of hotell room">
+    </aside>
+    <footer>
+        Hotell Paragraph | Surbrunnsgatan 38 | 113 48 Stockholm | 123 456 789 1000
+    </footer>
+
+    <script src="script-nav.js"></script>
+</body>
+
+</html>
